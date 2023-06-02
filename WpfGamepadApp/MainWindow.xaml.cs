@@ -20,9 +20,30 @@ namespace WpfGamepadApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Controller m_controller;
+
         public MainWindow()
         {
             InitializeComponent();
+            m_controller = new Controller();
+        }
+
+        private void Button_Click_Start(object sender, RoutedEventArgs e)
+        {
+            ButttonStart.IsEnabled = false;
+
+            m_controller.Start();
+
+            ButttonStop.IsEnabled = true;
+        }
+
+        private void Button_Click_Stop(object sender, RoutedEventArgs e)
+        {
+            ButttonStart.IsEnabled = true;
+
+            m_controller.Stop();
+
+            ButttonStop.IsEnabled = false;
         }
     }
 }
