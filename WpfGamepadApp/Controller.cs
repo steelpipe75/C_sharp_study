@@ -13,12 +13,14 @@ namespace WpfGamepadApp
     {
         private IXbox360Controller controller;
 
-        public Controller() {
+        public Controller()
+        {
             var client = new ViGEmClient();
             controller = client.CreateXbox360Controller();
         }
 
-        public void Start() {
+        public void Start()
+        {
             controller.Connect();
         }
 
