@@ -5,10 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfGamepadApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="750">
+        Title="MainWindow" Height="570" Width="750">
     <Grid>
-        <Button Name="ButttonStart" Content="Start" HorizontalAlignment="Left" Height="150" Margin="50,50,0,0" VerticalAlignment="Top" Width="300" Click="Button_Click_Start"/>
-        <Button Name="ButttonStop" Content="Stop" HorizontalAlignment="Right" Height="150" Margin="0,50,50,0" VerticalAlignment="Top" Width="300" Click="Button_Click_Stop" IsEnabled="False"/>
+        <Button Name="ButttonStart" Content="Start" HorizontalAlignment="Left" Height="100" Margin="50,50,0,0" VerticalAlignment="Top" Width="300" Click="Button_Click_Start"/>
+        <Button Name="ButttonStop" Content="Stop" HorizontalAlignment="Right" Height="100" Margin="0,50,50,0" VerticalAlignment="Top" Width="300" Click="Button_Click_Stop" IsEnabled="False"/>
+        
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="300" Margin="0,200,0,0" VerticalAlignment="Top" Width="650">
+            <Grid>
+                <Button Name="R2" Content="R2" HorizontalAlignment="Center" Height="25" Margin="0,25,400,0" VerticalAlignment="Top" Width="100"/>
+                <Button Name="R1" Content="R1" HorizontalAlignment="Center" Height="25" Margin="0,60,400,0" VerticalAlignment="Top" Width="100"/>
+
+                <Button Name="L2" Content="L2" HorizontalAlignment="Center" Height="25" Margin="400,25,0,0" VerticalAlignment="Top" Width="100"/>
+                <Button Name="L1" Content="L1" HorizontalAlignment="Center" Height="25" Margin="400,60,0,0" VerticalAlignment="Top" Width="100"/>
+
+                <Button Name="U" Content="↑" HorizontalAlignment="Center" Height="40" Margin="0,100,400,0" VerticalAlignment="Top" Width="40"/>
+                <Button Name="D" Content="↓" HorizontalAlignment="Center" Height="40" Margin="0,200,400,0" VerticalAlignment="Top" Width="40"/>
+                <Button Name="R" Content="→" HorizontalAlignment="Center" Height="40" Margin="0,150,300,0" VerticalAlignment="Top" Width="40"/>
+                <Button Name="L" Content="←" HorizontalAlignment="Center" Height="40" Margin="0,150,500,0" VerticalAlignment="Top" Width="40"/>
+
+                <Button Name="Y" Content="Y" HorizontalAlignment="Center" Height="40" Margin="400,100,0,0" VerticalAlignment="Top" Width="40"/>
+                <Button Name="A" Content="A" HorizontalAlignment="Center" Height="40" Margin="400,200,0,0" VerticalAlignment="Top" Width="40"/>
+                <Button Name="X" Content="X" HorizontalAlignment="Center" Height="40" Margin="300,150,0,0" VerticalAlignment="Top" Width="40"/>
+                <Button Name="B" Content="B" HorizontalAlignment="Center" Height="40" Margin="500,150,0,0" VerticalAlignment="Top" Width="40"/>
+                
+                
+            </Grid>
+
+        </Border>
 
     </Grid>
 </Window>
